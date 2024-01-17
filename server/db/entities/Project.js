@@ -12,6 +12,9 @@ const Project=sequelize.define("Project",{
         type:Sequelize.STRING,
         allowNull:false
     },
+    videoUrl: {
+        type:Sequelize.STRING
+    },
     externalUrl: {
         type:Sequelize.STRING,
         allowNull:false

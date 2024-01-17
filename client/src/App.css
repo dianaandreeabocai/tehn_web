@@ -20,7 +20,7 @@
   color: white;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=date],input[type=number] ,select {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -80,9 +80,138 @@ input[type=submit]:hover {
   color: white;
 }
 
-.tableIcon{ 
+.tableIcon{
   text-align: center;
   font-weight: bold;
   cursor: pointer;
 }
 
+
+:root {
+  --primary: #BFB48F;
+  --secondary: #564E58;
+  --accent: #904E55;
+  --white: #F2EFE9;
+  --black: #252627;
+}
+
+.project {
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--white);
+  padding: 16px;
+  margin-left: 16px;
+  margin-top:16px;
+}
+
+nav {
+  height: 42px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+  color: var(--white);
+  font-size: 20px;
+}
+
+
+button {
+  height: 24px;
+  background: var(--accent);
+  border: unset;
+  color: var(--white);
+  padding: 4px;
+  margin-left:8px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+button.disabled {
+  background: grey;
+  cursor: not-allowed;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--secondary);
+}
+
+header {
+  color: var(--white);
+  font-size: 24px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.dialogBody {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  border-top: 1px solid var(--primary);
+  padding: 24px;
+}
+
+.projectWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.resultsWrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project div{
+  padding-top: 8px;
+}
+
+.container {
+  display: flex;
+}
+
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--primary);
+  position: absolute;
+  width: 100%;
+}
+
+.loginWrapper button {
+  min-width: 120px;
+  margin: 8px;
+}
+.loginWrapper label {
+  width: 50%;
+}
+
+.intro {
+  padding: 16px;
+  color: var(--white);
+}
+
+.intro h4 {
+  padding-top: 16px;
+}
+
+.resultsWrapper .project {
+  width:300px;
+}
+
+div[role="dialog"] {
+  border-radius: 16px;
+  align-items: center;
+}
